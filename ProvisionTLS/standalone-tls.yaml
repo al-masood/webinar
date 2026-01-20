@@ -1,0 +1,20 @@
+apiVersion: kubedb.com/v1alpha2
+kind: Qdrant
+metadata:
+  name: qdrant-standalone-tls
+  namespace: demo
+spec:
+  version: 1.16.2
+  mode: Standalone
+  tls:
+    issuerRef:
+      name: qdrant-ca-issuer
+      kind: Issuer
+      apiGroup: "cert-manager.io"
+    client: true
+  storage:
+    accessModes:
+      - ReadWriteOnce
+    resources:
+      requests:
+        storage: 2Gi

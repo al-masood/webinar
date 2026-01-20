@@ -1,0 +1,15 @@
+apiVersion: kubedb.com/v1alpha2
+kind: Qdrant
+metadata:
+  name: qdrant-distributed
+  namespace: demo
+spec:
+  version: 1.16.2
+  mode: Distributed
+  replicas: 3
+  storage:
+    accessModes:
+      - ReadWriteOnce
+    resources:
+      requests:
+        storage: 2Gi
