@@ -1,0 +1,6 @@
+# IntelliJ / GoLand
+ProvisionTLS/.idea/
+
+# TLS / certs
+*.crt
+*.key
