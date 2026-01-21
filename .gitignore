@@ -1,5 +1,5 @@
 # IntelliJ / GoLand
-ProvisionTLS/.idea/
+.idea/
 
 # TLS / certs
 *.crt
