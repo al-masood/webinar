@@ -7,19 +7,19 @@ curl -X GET "http://localhost:6333/cluster" \
 
 curl -X PUT "http://localhost:6333/collections/my_collection" \
   -H "Content-Type: application/json" \
-  -H "api-key: jfRgjh6QOdz13y7O" \
+  -H "api-key: z0jU7D8hrardjGHX" \
   -d '{
     "vectors": {
       "size": 5,
       "distance": "Cosine"
     },
     "shard_number": 6,
-    "replication_factor": 4
+    "replication_factor": 2
   }'
 
 curl -X PUT "http://localhost:6333/collections/my_collection/points" \
   -H "Content-Type: application/json" \
-  -H "api-key: jfRgjh6QOdz13y7O" \
+  -H "api-key: z0jU7D8hrardjGHX" \
   -d '{
     "points": [
       {
